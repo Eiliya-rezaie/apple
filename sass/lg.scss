@@ -683,7 +683,8 @@
                             width: 100%;
                             position: absolute;
                             top: 0;
-                            padding -top: 50px;
+                            padding-top: 50px;
+                            // this is
                             >p:nth-of-type(1){
                                 width: 20%;
                                 margin: 0 auto;
@@ -742,14 +743,14 @@
                 >span:nth-of-type(1){
                     display: block;
                     margin: 0px auto;
-                    width: 65%;
+                    width: 85%;
                     font-family: "opensans";
-                    font-size: 11px;
+                    font-size: 14px;
                     color: gray;
-                    line-height: 15px;
+                    line-height: 30px;
                     >a{
                         color: gray;
-                        font-size: 11px;
+                        font-size: 16px;
                         font-family: "opensans";
                         line-height: 15px;
                         text-decoration: none;
@@ -758,57 +759,57 @@
                 >span:nth-of-type(2){
                     display: block;
                     margin: 0px auto;
-                    width: 65%;
+                    width: 85%;
                     font-family: "opensans";
-                    font-size: 11px;
+                    font-size: 14px;
                     color: gray;
-                    line-height: 15px;
+                    line-height: 30px;
                     margin-top: 12px;
                 }
                 >span:nth-of-type(3){
                     display: block;
                     margin: 0px auto;
-                    width: 65%;
+                    width: 85%;
                     font-family: "opensans";
-                    font-size: 11px;
+                    font-size: 14px;
                     color: gray;
-                    line-height: 15px;
+                    line-height: 30px;
                     margin-top: 12px;
                 }
                 >span:nth-of-type(4){
                     display: block;
                     margin: 0px auto;
-                    width: 65%;
+                    width: 85%;
                     font-family: "opensans";
-                    font-size: 11px;
+                    font-size: 14px;
                     color: gray;
-                    line-height: 15px;
+                    line-height: 30px;
                     margin-top: 12px;
                 }
                 >span:nth-of-type(5){
                     display: block;
                     margin: 0px auto;
-                    width: 65%;
+                    width: 85%;
                     font-family: "opensans";
-                    font-size: 11px;
+                    font-size: 14px;
                     color: gray;
-                    line-height: 15px;
+                    line-height: 30px;
                     margin-top: 12px;
                 }
                 >span:nth-of-type(6){
                     display: block;
                     margin: 0px auto;
-                    width: 65%;
+                    width: 85%;
                     font-family: "opensans";
-                    font-size: 11px;
+                    font-size: 14px;
                     color: gray;
-                    line-height: 15px;
+                    line-height: 30px;
                     margin-top: 12px;
                     >a{
                         color: gray;
                         text-decoration: none;
                         font-family: "opensans";
-                        font-size: 11px;
+                        font-size: 16px;
                         font-weight: 900;
                     }
                 }
@@ -822,12 +823,12 @@
                     line-height: 15px;
                     margin-top: 12px;
                     border-bottom: 2px solid gray;
-                    padding-bottom: 20px;
+                    padding-bottom: 30px;
                 }
             }
             >section:nth-of-type(2){
                 width: 100%;
-                padding: 10px 280px;
+                padding: 40px 140px;
                 box-sizing: border-box;
                 >nav{
                     display: grid;
@@ -845,7 +846,7 @@
                                 text-decoration: none;
                                 color: gray;
                                 font-family: "opensans";
-                                font-size: 12px;
+                                font-size: 14px;
                                 &:hover{
                                     text-decoration: underline;
                                 }
@@ -858,7 +859,7 @@
                                 text-decoration: none;
                                 color:#3b3b3b;
                                 font-family: "opensans";
-                                font-size: 12px;
+                                font-size: 14px;
                                 font-weight: 600;
                                 &:hover{
                                     text-decoration: none;
@@ -872,7 +873,7 @@
                                 text-decoration: none;
                                 color:#3b3b3b;
                                 font-family: "opensans";
-                                font-size: 12px;
+                                font-size: 14px;
                                 font-weight: 600;
                                 &:hover{
                                     text-decoration:none;
@@ -886,7 +887,7 @@
                                 text-decoration: none;
                                 color:#3b3b3b;
                                 font-family: "opensans";
-                                font-size: 12px;
+                                font-size: 14px;
                                 font-weight: 600;
                                 &:hover{
                                     text-decoration: none;
@@ -902,12 +903,13 @@
                 display: flex;
                 padding-bottom: 12px;
                 border-bottom: 2px solid lightgray;
+                // background-color: #0066CC;
                 >span:nth-of-type(1){
                     display: flex;
-                    width: 53%;
+                    width: 80%;
                     justify-content:end;
                     margin: 0 auto;
-                    font-size:11px;
+                    font-size:14px;
                     font-family: "opensans";
                     color: #3b3b3b;
                     >a{
@@ -924,18 +926,20 @@
                     display: flex;
                     width: 60%;
                     margin: 0 auto;
-                    font-size:11px;
+                    font-size:14px;
                     font-family: "opensans";
                     color: #3b3b3b;
                     margin-left: 6px;
                     font-weight: 900;
+                    justify-content: center;
+                    // background-color: #0066CC;
                 }
             }
             >section:nth-of-type(4){
                 width: 100%;
                 padding-bottom: 30px;
                 >section:nth-of-type(1){
-                    width: 60%;
+                    width: 80%;
                     margin: 0 auto;
                     display: flex;
                     position: relative;
@@ -945,7 +949,7 @@
                             text-decoration: none;
                             color: gray;
                             font-family: "opensans";
-                            font-size: 11px;
+                            font-size: 14px;
                         }
                     }
                     >span:nth-of-type(2){
@@ -956,7 +960,7 @@
                             text-decoration: none;
                             color: gray;
                             font-family: "opensans";
-                            font-size: 11px;
+                            font-size: 14px;
                             font-weight: 900;
                             border-right: 1px solid lightgray;
                             padding: 0px 10px;
@@ -970,7 +974,7 @@
                             text-decoration: none;
                             color: gray;
                             font-family: "opensans";
-                            font-size: 11px;
+                            font-size: 14px;
                             font-weight: 900;
                             border-right: 1px solid lightgray;
                             padding: 0px 10px;
@@ -984,7 +988,7 @@
                             text-decoration: none;
                             color: gray;
                             font-family: "opensans";
-                            font-size: 11px;
+                            font-size: 14px;
                             font-weight: 900;
                             border-right: 1px solid lightgray;
                             padding: 0px 10px;
@@ -998,7 +1002,7 @@
                             text-decoration: none;
                             color: gray;
                             font-family: "opensans";
-                            font-size: 11px;
+                            font-size: 14px;
                             font-weight: 900;
                             border-right: 1px solid lightgray;
                             padding: 0px 10px;
@@ -1014,7 +1018,7 @@
                             text-decoration: none;
                             color: gray;
                             font-family: "opensans";
-                            font-size: 11px;
+                            font-size: 14px;
                             font-weight: 900;
                             // border-right: 1px solid lightgray;
                             padding: 0px 10px;
@@ -1025,5 +1029,6 @@
             }
             // end make footer
         }
-    }     
+}
+     
 
