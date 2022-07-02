@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-@media (min-width:1200px){
+@media (min-width:992px) and (max-width:1200px){
     body{
         // make header
         >header{
@@ -24,7 +24,7 @@
                 @include menu;
                 opacity: 0.9;
                 >ul{
-                    width: 80%;
+                    width: 95%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -39,9 +39,9 @@
                             @include opensans;
                             color: white;
                             opacity: 0.7;
-                            font-size: 12px;
+                            font-size: 14px;
                             font-weight: 100;
-                            padding: 0px 17px;
+                            padding: 0px 14px;
                             @include transitionshort;
                             &:hover{
                                 opacity: 1;
@@ -68,22 +68,22 @@
         }
         // end make header
         // make paralax
-        >section:nth-of-type(1){
+            >section:nth-of-type(1){
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 72px;
+            height: 82px;
             background-color: #F5F5F7;
             position: relative;
             z-index: 999998;
             >section{
-                width: 50%;
+                width: 70%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 >img{
-                    width: 17%;
+                    width: 20%;
                     // margin-left: 5px;
                     margin-right: 10px;
                 }
@@ -93,15 +93,15 @@
                     text-align: center;
                     text-decoration: none;
                     font-family: "opensans";
-                    font-size: 14px;
+                    font-size: 20px;
                     color: #086BCE;
                     &:hover{
                         text-decoration: underline;
                     }
                 }
             }
-        }
-        >section:nth-of-type(2){
+            }
+            >section:nth-of-type(2){
             width: 100%;
             height: 595px;
             background-color: black;
@@ -122,7 +122,8 @@
                     width: 50%;
                     height: 100%;
                     background-color: transparent;
-                    left: 0;
+                    // right: 50%;
+                    // top: -4%;
                     display: flex;
                     align-items: center;
                     justify-content: end;
@@ -218,8 +219,8 @@
                     }
                 }
             }
-        }
-        >section:nth-of-type(3){
+            }
+            >section:nth-of-type(3){
             width: 100%;
             height: 620px;
             position: relative;
@@ -309,417 +310,429 @@
                     }
                 }
             }
-        }
-        >section:nth-of-type(4){
-            width: 100%;
-            height: 530px;
-            color: white;
-            position: relative;
-            // display: flex;
-            justify-content: center;
-            >section:nth-of-type(1){
-                width: inherit;
-                height: inherit;
-                background: url("../images/paralax/laptop.jpg") no-repeat center center scroll;
-                background-size: cover;
-                >section{
-                    width: 100%;
-                    // margin-top: 25px;
-                    padding-top: 40px;
-                    >h1,h2{
-                        text-align: center;
-                        color: black;
-                        font-family: "opensans";
-                    }
-                    >a{
-                        display: block;
-                        text-align: center;
-                        font-size: 18px;
-                        font-family: "opensans";
-                        color: #0066CC;
-                        text-decoration: none;
-                        &:hover{
-                            text-decoration: underline;
+            }
+            >section:nth-of-type(4){
+                width: 100%;
+                height: 530px;
+                color: white;
+                position: relative;
+                // display: flex;
+                justify-content: center;
+                >section:nth-of-type(1){
+                    width: inherit;
+                    height: inherit;
+                    background: url("../images/paralax/laptop.jpg") no-repeat center center scroll;
+                    background-size: cover;
+                    >section{
+                        width: 100%;
+                        // margin-top: 25px;
+                        padding-top: 40px;
+                        >h1,h2{
+                            text-align: center;
+                            color: black;
+                            font-family: "opensans";
                         }
-                    }
-                    >h1{
-                        // margin-top: 20px;
-                        font-size: 50px;
-                        font-style: italic;
-                        font-weight: 900;
-                        >span{
-                            color: #CA2166;
+                        >a{
+                            display: block;
+                            text-align: center;
+                            font-size: 18px;
+                            font-family: "opensans";
+                            color: #0066CC;
+                            text-decoration: none;
+                            &:hover{
+                                text-decoration: underline;
+                            }
                         }
-                    }
-                    >h2{
-                        font-weight: 100;
+                        >h1{
+                            // margin-top: 20px;
+                            font-size: 50px;
+                            font-style: italic;
+                            font-weight: 900;
+                            >span{
+                                color: #CA2166;
+                            }
+                        }
+                        >h2{
+                            font-weight: 100;
+                        }
                     }
                 }
             }
-        }
-        >section:nth-of-type(5){
-            width: 100%;
-            padding: 14px;
-            box-sizing: border-box;
-            // start grid 1
-            >section:nth-of-type(1){
+            >section:nth-of-type(5){
                 width: 100%;
-                display: grid;
-                grid-gap: 12px;
-                grid-template-areas: "section section";
+                padding: 14px;
+                box-sizing: border-box;
+                // start grid 1
                 >section:nth-of-type(1){
-                    width: 660px;
-                    height: 530px;
-                    position: relative;
-                    left: 0;
-                    >img{
+                    width: 100%;
+                    display: grid;
+                    grid-gap: 12px;
+                    grid-template-areas: "section section";
+                    >section:nth-of-type(1){
                         width: 100%;
-                        height: 100%;
-                        object-fit:cover;
-                    }
-                    >section{
-                        width: 100%;
-                        position: absolute;
-                        top: 0;
-                        padding-top: 50px;
-                        >p:nth-of-type(1){
-                            width: 20%;
-                            margin: 0 auto;
-                            text-align: center;
-                            >img{
-                                width: 100%;
-                            }
+                        height: 500px;
+                        position: relative;
+                        left: 0;
+                        >img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit:cover;
                         }
-                        >h2:nth-of-type(1){
-                            color: white;
-                            font-size: 19px;
-                            font-family: "opensans";
-                            text-align: center;
-                        }
-                        >p:nth-of-type(2){
-                            text-align: center;
-                            margin-top: 10px;
-                            >a:nth-of-type(1){
-                                font-family: "opensans";
-                                text-decoration: none;
-                                margin-right: 20px;
-                                color: #2997FF;
-                                &:hover{
-                                    text-decoration: underline;
+                        >section{
+                            width: 100%;
+                            position: absolute;
+                            top: 0;
+                            padding-top: 50px;
+                            >p:nth-of-type(1){
+                                width: 20%;
+                                margin: 0 auto;
+                                text-align: center;
+                                >img{
+                                    width: 100%;
                                 }
                             }
-                            >a:nth-of-type(2){
+                            >h2:nth-of-type(1){
+                                color: white;
+                                font-size: 19px;
                                 font-family: "opensans";
-                                text-decoration: none;
-                                color: #2997FF;
-                                // margin-right: 20px;
-                                &:hover{
-                                    text-decoration: underline;
+                                text-align: center;
+                            }
+                            >p:nth-of-type(2){
+                                text-align: center;
+                                margin-top: 10px;
+                                >a:nth-of-type(1){
+                                    font-family: "opensans";
+                                    text-decoration: none;
+                                    margin-right: 20px;
+                                    color: #2997FF;
+                                    font-size: 20px;
+                                    &:hover{
+                                        text-decoration: underline;
+                                    }
+                                }
+                                >a:nth-of-type(2){
+                                    font-family: "opensans";
+                                    text-decoration: none;
+                                    color: #2997FF;
+                                    font-size: 20px;
+                                    // margin-right: 20px;
+                                    &:hover{
+                                        text-decoration: underline;
+                                    }
                                 }
                             }
                         }
                     }
+                    // end grid 1
+                    // start grid 2
+                    >section:nth-of-type(2){
+                        width: 100%;
+                        height: 530px;
+                        position: relative;
+                        left: 0;
+                        >img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit:cover;
+                        }
+                        >section{
+                            width: 100%;
+                            position: absolute;
+                            top: 0;
+                            padding-top: 50px;
+                            >p:nth-of-type(1){
+                                width: 20%;
+                                margin: 0 auto;
+                                text-align: center;
+                                >img{
+                                    width: 100%;
+                                }
+                            }
+                            >h2:nth-of-type(1){
+                                color: black;
+                                font-size: 19px;
+                                font-family: "opensans";
+                                text-align: center;
+                            }
+                            >p:nth-of-type(2){
+                                text-align: center;
+                                margin-top: 10px;
+                                >a:nth-of-type(1){
+                                    font-family: "opensans";
+                                    text-decoration: none;
+                                    margin-right: 20px;
+                                    color: #2997FF;
+                                    font-size: 20px;
+                                    &:hover{
+                                        text-decoration: underline;
+                                    }
+                                }
+                                >a:nth-of-type(2){
+                                    font-family: "opensans";
+                                    text-decoration: none;
+                                    color: #2997FF;
+                                    font-size: 20px;
+                                    // margin-right: 20px;
+                                    &:hover{
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    // end grid 2
                 }
                 // end grid 1
                 // start grid 2
                 >section:nth-of-type(2){
-                    width: 660px;
-                    height: 530px;
-                    position: relative;
-                    left: 0;
-                    >img{
+                    width: 100%;
+                    display: grid;
+                    grid-gap: 12px;
+                    grid-template-areas: "section section";
+                    >section:nth-of-type(1){
                         width: 100%;
-                        height: 100%;
-                        object-fit:cover;
-                    }
-                    >section{
-                        width: 100%;
-                        position: absolute;
-                        top: 0;
-                        padding-top: 50px;
-                        >p:nth-of-type(1){
-                            width: 20%;
-                            margin: 0 auto;
-                            text-align: center;
-                            >img{
+                        height: 530px;
+                        position: relative;
+                        left: 0;
+                        >img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit:cover;
+                        }
+                        >section{
+                            width: 100%;
+                            position: absolute;
+                            top: 0;
+                            padding-top: 50px;
+                            >h1:nth-of-type(1){
                                 width: 100%;
-                            }
-                        }
-                        >h2:nth-of-type(1){
-                            color: black;
-                            font-size: 19px;
-                            font-family: "opensans";
-                            text-align: center;
-                        }
-                        >p:nth-of-type(2){
-                            text-align: center;
-                            margin-top: 10px;
-                            >a:nth-of-type(1){
+                                text-align: center;
                                 font-family: "opensans";
-                                text-decoration: none;
-                                margin-right: 20px;
-                                color: #2997FF;
-                                &:hover{
-                                    text-decoration: underline;
+                                font-size: 35px;
+                                font-weight: 900;
+                            }
+                            >h2:nth-of-type(1){
+                                color: black;
+                                font-size: 18px;
+                                font-family: "opensans";
+                                text-align: center;
+                            }
+                            >p:nth-of-type(1){
+                                width: 100%;
+                                text-align: center;
+                                margin-top: 10px;
+                                >a:nth-of-type(1){
+                                    font-family: "opensans";
+                                    text-decoration: none;
+                                    margin-right: 20px;
+                                    color: #2997FF;
+                                    font-size: 20px;
+                                    &:hover{
+                                        text-decoration: underline;
+                                    }
+                                }
+                                >a:nth-of-type(2){
+                                    font-family: "opensans";
+                                    text-decoration: none;
+                                    color: #2997FF;
+                                    font-size: 20px;
+                                    // margin-right: 20px;
+                                    &:hover{
+                                        text-decoration: underline;
+                                    }
                                 }
                             }
-                            >a:nth-of-type(2){
+                        }
+                    }
+                    // end grid 1
+                    // start grid 2
+                    >section:nth-of-type(2){
+                        width: 100%;
+                        height: 530px;
+                        position: relative;
+                        left: 0;
+                        >img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit:cover;
+                        }
+                        >section{
+                            width: 100%;
+                            position: absolute;
+                            top: 0;
+                            padding-top: 50px;
+                            >h1:nth-of-type(1){
+                                width: 100%;
+                                text-align: center;
                                 font-family: "opensans";
-                                text-decoration: none;
-                                color: #2997FF;
-                                // margin-right: 20px;
-                                &:hover{
-                                    text-decoration: underline;
+                                font-size: 35px;
+                                font-weight: 900;
+                            }
+                            >h2:nth-of-type(1){
+                                color: black;
+                                font-size: 19px;
+                                font-family: "opensans";
+                                text-align: center;
+                            }
+                            >p:nth-of-type(1){
+                                text-align: center;
+                                margin-top: 10px;
+                                >a:nth-of-type(1){
+                                    font-family: "opensans";
+                                    text-decoration: none;
+                                    margin-right: 20px;
+                                    color: #2997FF;
+                                    font-size: 20px;
+                                    &:hover{
+                                        text-decoration: underline;
+                                    }
+                                }
+                                >a:nth-of-type(2){
+                                    font-family: "opensans";
+                                    text-decoration: none;
+                                    color: #2997FF;
+                                    font-size: 20px;
+                                    // margin-right: 20px;
+                                    &:hover{
+                                        text-decoration: underline;
+                                    }
                                 }
                             }
                         }
                     }
                 }
                 // end grid 2
-            }
-            // end grid 1
-            // start grid 2
-            >section:nth-of-type(2){
-                width: 100%;
-                display: grid;
-                grid-gap: 12px;
-                grid-template-areas: "section section";
-                >section:nth-of-type(1){
-                    width: 660px;
-                    height: 530px;
-                    position: relative;
-                    left: 0;
-                    >img{
+                // start grid 3
+                >section:nth-of-type(3){
+                    width: 100%;
+                    display: grid;
+                    grid-gap: 12px;
+                    grid-template-areas: "section section";
+                    margin-top: 10px;
+                    >section:nth-of-type(1){
                         width: 100%;
-                        height: 100%;
-                        object-fit:cover;
-                    }
-                    >section{
-                        width: 100%;
-                        position: absolute;
-                        top: 0;
-                        padding-top: 50px;
-                        >h1:nth-of-type(1){
+                        height: 530px;
+                        position: relative;
+                        left: 0;
+                        >img{
                             width: 100%;
-                            text-align: center;
-                            font-family: "opensans";
-                            font-size: 35px;
-                            font-weight: 900;
+                            height: 100%;
+                            object-fit:cover;
                         }
-                        >h2:nth-of-type(1){
-                            color: black;
-                            font-size: 18px;
-                            font-family: "opensans";
-                            text-align: center;
-                        }
-                        >p:nth-of-type(1){
+                        >section{
                             width: 100%;
-                            text-align: center;
-                            margin-top: 10px;
-                            >a:nth-of-type(1){
-                                font-family: "opensans";
-                                text-decoration: none;
-                                margin-right: 20px;
-                                color: #2997FF;
-                                &:hover{
-                                    text-decoration: underline;
+                            position: absolute;
+                            top: 0;
+                            padding-top: 50px;
+                            >p:nth-of-type(1){
+                                width: 20%;
+                                margin: 0 auto;
+                                text-align: center;
+                                >img{
+                                    width: 100%;
                                 }
                             }
-                            >a:nth-of-type(2){
+                            >h2:nth-of-type(1){
+                                color: black;
+                                font-size: 17px;
                                 font-family: "opensans";
-                                text-decoration: none;
-                                color: #2997FF;
-                                // margin-right: 20px;
-                                &:hover{
-                                    text-decoration: underline;
+                                text-align: center;
+                                margin: 0px auto;
+                                width: 40%;
+                                font-weight: 100;
+                            }
+                            >p:nth-of-type(2){
+                                text-align: center;
+                                margin-top: 10px;
+                                >a:nth-of-type(1){
+                                    font-family: "opensans";
+                                    text-decoration: none;
+                                    margin-right: 20px;
+                                    color: #2997FF;
+                                    font-size: 20px;
+                                    &:hover{
+                                        text-decoration: underline;
+                                    }
+                                }
+                                >a:nth-of-type(2){
+                                    font-family: "opensans";
+                                    text-decoration: none;
+                                    color: #2997FF;
+                                    font-size: 20px;
+                                    // margin-right: 20px;
+                                    &:hover{
+                                        text-decoration: underline;
+                                    }
                                 }
                             }
                         }
                     }
-                }
-                // end grid 1
-                // start grid 2
-                >section:nth-of-type(2){
-                    width: 660px;
-                    height: 530px;
-                    position: relative;
-                    left: 0;
-                    >img{
+                    // end grid 1
+                    // start grid 2
+                    >section:nth-of-type(2){
                         width: 100%;
-                        height: 100%;
-                        object-fit:cover;
-                    }
-                    >section{
-                        width: 100%;
-                        position: absolute;
-                        top: 0;
-                        padding-top: 50px;
-                        >h1:nth-of-type(1){
+                        height: 530px;
+                        position: relative;
+                        left: 0;
+                        >img{
                             width: 100%;
-                            text-align: center;
-                            font-family: "opensans";
-                            font-size: 35px;
-                            font-weight: 900;
+                            height: 100%;
+                            object-fit:cover;
                         }
-                        >h2:nth-of-type(1){
-                            color: black;
-                            font-size: 19px;
-                            font-family: "opensans";
-                            text-align: center;
-                        }
-                        >p:nth-of-type(1){
-                            text-align: center;
-                            margin-top: 10px;
-                            >a:nth-of-type(1){
-                                font-family: "opensans";
-                                text-decoration: none;
-                                margin-right: 20px;
-                                color: #2997FF;
-                                &:hover{
-                                    text-decoration: underline;
+                        >section{
+                            width: 100%;
+                            position: absolute;
+                            top: 0;
+                            padding -top: 50px;
+                            >p:nth-of-type(1){
+                                width: 20%;
+                                margin: 0 auto;
+                                text-align: center;
+                                >img{
+                                    width: 100%;
                                 }
                             }
-                            >a:nth-of-type(2){
+                            >h2:nth-of-type(1){
+                                width: 40%;
+                                margin: 0px auto;
+                                color: white;
+                                font-size: 17px;
                                 font-family: "opensans";
-                                text-decoration: none;
-                                color: #2997FF;
-                                // margin-right: 20px;
-                                &:hover{
-                                    text-decoration: underline;
+                                text-align: center;
+                                font-weight: 100;
+                            }
+                            >p:nth-of-type(2){
+                                text-align: center;
+                                margin-top: 10px;
+                                >a:nth-of-type(1){
+                                    font-family: "opensans";
+                                    text-decoration: none;
+                                    margin-right: 20px;
+                                    color: #A2F901;
+                                    font-size: 20px;
+                                    &:hover{
+                                        text-decoration: underline;
+                                    }
+                                }
+                                >a:nth-of-type(2){
+                                    font-family: "opensans";
+                                    text-decoration: none;
+                                    color: #A2F901;
+                                    font-size: 20px;
+                                    // margin-right: 20px;
+                                    &:hover{
+                                        text-decoration: underline;
+                                    }
                                 }
                             }
                         }
                     }
                 }
+                // end grid 3
             }
-            // end grid 2
-            // start grid 3
-            >section:nth-of-type(3){
-                width: 100%;
-                display: grid;
-                grid-gap: 12px;
-                grid-template-areas: "section section";
-                margin-top: 10px;
-                >section:nth-of-type(1){
-                    width: 660px;
-                    height: 530px;
-                    position: relative;
-                    left: 0;
-                    >img{
-                        width: 100%;
-                        height: 100%;
-                        object-fit:cover;
-                    }
-                    >section{
-                        width: 100%;
-                        position: absolute;
-                        top: 0;
-                        padding-top: 50px;
-                        >p:nth-of-type(1){
-                            width: 20%;
-                            margin: 0 auto;
-                            text-align: center;
-                            >img{
-                                width: 100%;
-                            }
-                        }
-                        >h2:nth-of-type(1){
-                            color: black;
-                            font-size: 17px;
-                            font-family: "opensans";
-                            text-align: center;
-                            margin: 0px auto;
-                            width: 40%;
-                            font-weight: 100;
-                        }
-                        >p:nth-of-type(2){
-                            text-align: center;
-                            margin-top: 10px;
-                            >a:nth-of-type(1){
-                                font-family: "opensans";
-                                text-decoration: none;
-                                margin-right: 20px;
-                                color: #2997FF;
-                                &:hover{
-                                    text-decoration: underline;
-                                }
-                            }
-                            >a:nth-of-type(2){
-                                font-family: "opensans";
-                                text-decoration: none;
-                                color: #2997FF;
-                                // margin-right: 20px;
-                                &:hover{
-                                    text-decoration: underline;
-                                }
-                            }
-                        }
-                    }
-                }
-                // end grid 1
-                // start grid 2
-                >section:nth-of-type(2){
-                    width: 660px;
-                    height: 530px;
-                    position: relative;
-                    left: 0;
-                    >img{
-                        width: 100%;
-                        height: 100%;
-                        object-fit:cover;
-                    }
-                    >section{
-                        width: 100%;
-                        position: absolute;
-                        top: 0;
-                        padding-top: 50px;
-                        >p:nth-of-type(1){
-                            width: 20%;
-                            margin: 0 auto;
-                            text-align: center;
-                            >img{
-                                width: 100%;
-                            }
-                        }
-                        >h2:nth-of-type(1){
-                            width: 40%;
-                            margin: 0px auto;
-                            color: white;
-                            font-size: 17px;
-                            font-family: "opensans";
-                            text-align: center;
-                            font-weight: 100;
-                        }
-                        >p:nth-of-type(2){
-                            text-align: center;
-                            margin-top: 10px;
-                            >a:nth-of-type(1){
-                                font-family: "opensans";
-                                text-decoration: none;
-                                margin-right: 20px;
-                                color: #A2F901;
-                                &:hover{
-                                    text-decoration: underline;
-                                }
-                            }
-                            >a:nth-of-type(2){
-                                font-family: "opensans";
-                                text-decoration: none;
-                                color: #A2F901;
-                                // margin-right: 20px;
-                                &:hover{
-                                    text-decoration: underline;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            // end grid 3
-        }
-        // end make paralax
-        // make footer
-        >footer:nth-of-type(1){
+            // end make paralax
+                    // make footer
+            >footer:nth-of-type(1){
             width: 100%;
             background-color: #F5F5F7;
             >section:nth-of-type(1){
@@ -1009,7 +1022,8 @@
                     }
                 }
             }
+            }
+            // end make footer
         }
-        // end make footer
-    }
-}
+    }     
+
