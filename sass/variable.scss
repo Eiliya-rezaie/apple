@@ -1,0 +1,30 @@
+@mixin menu {
+    background-color: #121212;
+}
+@font-face {
+    font-family:"opensans";
+    src: url("../fonts/OpenSans-Italic-VariableFont_wdth\,wght.ttf");
+    src: url("../fonts/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+@mixin opensans {
+    font-family: "opensans";
+}
+@for $i from 1 to 13 {
+    .col-xl-#{$i}{
+        width: 8.333333% * $i;
+    }
+}
+@for $i from 1 to 13 {
+    .offset-#{$i}{
+        margin-left:8.333333% * $i;
+    }
+}
+// transition
+@mixin transitionshort {
+    transition: all linear 100ms;
+}
+// transition
+@mixin paralax($address,$repeat,$pos1,$pos2,$fix,$cover) {
+    background:$address $repeat $pos1 $pos2 $fix ;
+    background-size: $cover;
+}

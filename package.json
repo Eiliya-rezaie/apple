@@ -1,0 +1,17 @@
+{
+  "name": "apple_first_page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w sass/main.scss -o css/ -r"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "live-server": "^1.2.2",
+    "node-sass": "^7.0.1"
+  }
+}

@@ -1,0 +1,6 @@
+* {
+  margin: 0; }
+
+@media (min-width: 1200px) {
+  body > header {
+    height: 44px; } }

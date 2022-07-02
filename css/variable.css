@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "opensans";
+  src: url("../fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf");
+  src: url("../fonts/OpenSans-VariableFont_wdth,wght.ttf"); }
+
+.col-xl-1 {
+  width: 8.33333%; }
+
+.col-xl-2 {
+  width: 16.66667%; }
+
+.col-xl-3 {
+  width: 25.0%; }
+
+.col-xl-4 {
+  width: 33.33333%; }
+
+.col-xl-5 {
+  width: 41.66666%; }
+
+.col-xl-6 {
+  width: 50.0%; }
+
+.col-xl-7 {
+  width: 58.33333%; }
+
+.col-xl-8 {
+  width: 66.66666%; }
+
+.col-xl-9 {
+  width: 75.0%; }
+
+.col-xl-10 {
+  width: 83.33333%; }
+
+.col-xl-11 {
+  width: 91.66666%; }
+
+.col-xl-12 {
+  width: 100.0%; }
+
+.offset-1 {
+  margin-left: 8.33333%; }
+
+.offset-2 {
+  margin-left: 16.66667%; }
+
+.offset-3 {
+  margin-left: 25.0%; }
+
+.offset-4 {
+  margin-left: 33.33333%; }
+
+.offset-5 {
+  margin-left: 41.66666%; }
+
+.offset-6 {
+  margin-left: 50.0%; }
+
+.offset-7 {
+  margin-left: 58.33333%; }
+
+.offset-8 {
+  margin-left: 66.66666%; }
+
+.offset-9 {
+  margin-left: 75.0%; }
+
+.offset-10 {
+  margin-left: 83.33333%; }
+
+.offset-11 {
+  margin-left: 91.66666%; }
+
+.offset-12 {
+  margin-left: 100.0%; }
